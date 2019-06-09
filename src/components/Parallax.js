@@ -7,44 +7,59 @@ const Wrap = styled.div``;
 const Parallax = () => {
   return (
     <Wrap>
-      <div className="pimg1">
-        <div className="ptext">
-          <span className="border">Lets Talk</span>
-        </div>
-      </div>
+      <div className="pimg1" />
 
-      <section className="section section-light">
-        <iframe width="70%" height="100%" src="https://res.cloudinary.com/bfrest/video/upload/v1559958732/wolfahl/Snow_sundance_official.mp4" />
+      <section className="section section-dark">
+        <iframe src="https://res.cloudinary.com/bfrest/video/upload/v1559958732/wolfahl/Snow_sundance_official.mp4" />
       </section>
 
       <div className="pimg2">
-        <p>hello</p>hi
+        <div className="ptext">
+          <span className="border trans">Light Fest</span>
+        </div>
       </div>
 
-      <section className="section section-dark">
-        <iframe width="200px" height="100px" src="" />
-      </section>
+      <div className="section section-dark">
+        <video>
+          <source src="https://res.cloudinary.com/bfrest/video/upload/v1560092162/wolfahl/MVI_5821.mp4" />
+        </video>
+
+        <video>
+          <source src="https://res.cloudinary.com/bfrest/video/upload/v1560092162/wolfahl/MVI_5821.mp4" />
+        </video>
+
+        <video>
+          <source src="https://res.cloudinary.com/bfrest/video/upload/v1560092162/wolfahl/MVI_5821.mp4" />
+        </video>
+
+        <video>
+          <source src="https://res.cloudinary.com/bfrest/video/upload/v1560092162/wolfahl/MVI_5821.mp4" />
+        </video>
+      </div>
 
       <div className="pimg3">
         <div className="ptext">
-          <span className="border trans">Image Three Text</span>
+          <span className="border trans">Cancun</span>
         </div>
       </div>
 
       <section className="section section-dark">
-        <h2>Section Three</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis
-          consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-          inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis
-          voluptatem doloremque fugiat dolor repellendus ratione in.
-        </p>
+        <img src="https://res.cloudinary.com/bfrest/image/upload/v1560109072/wolfahl/Screen_Shot_2019-06-09_at_1.36.16_PM.png" alt="cancun" />
+
+        <img src="https://res.cloudinary.com/bfrest/image/upload/v1560109056/wolfahl/Screen_Shot_2019-06-09_at_1.35.24_PM.png" alt="cancun" />
+
+        <img src="https://res.cloudinary.com/bfrest/image/upload/v1560109043/wolfahl/Screen_Shot_2019-06-09_at_1.35.41_PM.png" alt="cancun" />
+
+        <img src="https://res.cloudinary.com/bfrest/image/upload/v1560109072/wolfahl/Screen_Shot_2019-06-09_at_1.36.16_PM.png" alt="cancun" />
       </section>
 
-      <div className="pimg1">
-        <div className="ptext">
-          <span className="border">Lets Talks</span>
-        </div>
+      <div className="pimg1 bottom">
+        <form>
+          <h1>Let's Connect</h1>
+          <input placeholder="Email" type="text" />
+          <input placeholder="Name" type="text" />
+          <textarea placeholder="Description" />
+        </form>
       </div>
     </Wrap>
   );

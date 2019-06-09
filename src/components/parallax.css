@@ -25,15 +25,32 @@
 }
 
 .pimg3 {
-  background-image: url("https://res.cloudinary.com/bfrest/image/upload/v1521900998/sample.jpg");
+  background-image: url("https://res.cloudinary.com/bfrest/image/upload/v1560109064/wolfahl/Screen_Shot_2019-06-09_at_1.34.50_PM.png");
   min-height: 900px;
 }
 
 .section {
   text-align: center;
   padding: 5px 20px;
-
   background: none;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+video {
+  height: 200px;
+  width: 400px;
+  margin: 10px;
+  padding: 25px 0;
+}
+
+img {
+  height: 200px;
+  width: 400px;
+  margin: 10px;
+  padding: 25px 0;
 }
 
 .section-light {
@@ -44,10 +61,14 @@
 
 iframe {
   border: none;
+  height: 600px;
+  width: 1000px;
+  padding: 20px;
+  margin-left: 140px;
 }
 
 .section-dark {
-  background-color: #282e34;
+  background-color: #34495e;
   color: #ddd;
 }
 
@@ -63,7 +84,6 @@ iframe {
 }
 
 .ptext .border {
-  border: 4px solid #fff;
   border-radius: 8px;
   font-weight: 600;
   color: #fff;
@@ -72,10 +92,59 @@ iframe {
 }
 
 .ptext .border.trans {
-  background-color: transparent;
+  background-color: #34495e;
+}
+
+form {
+  background: #fff;
+  height: 50vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  margin-top: 90px;
+  opacity: 0.8;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 5%;
+  margin: 10px;
+  width: 40%;
+}
+
+textarea {
+  width: 40%;
+  height: 150px;
 }
 
 @media (max-width: 568px) {
+  iframe {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  video {
+    width: 80vw;
+  }
+
   .pimg1,
   .pimg2,
   .pimg3 {
