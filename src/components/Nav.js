@@ -4,7 +4,6 @@ import "./navStyles.css";
 const Nav = () => {
   return (
     <nav>
-      <h2>WOLFAHLco</h2>
       <ul>
         <li>Home</li>
         <li>About</li>

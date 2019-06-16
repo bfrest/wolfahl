@@ -105,7 +105,7 @@ form {
   justify-content: center;
   border: 2px solid black;
   margin-top: 90px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .bottom {
@@ -118,6 +118,7 @@ input {
   height: 5%;
   margin: 10px;
   width: 40%;
+  opacity: 1;
 }
 
 textarea {
