@@ -41,19 +41,17 @@ const NavWrap = styled.div`
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const showDropdown = () => {
-    showMenu ? setShowMenu(false) : setShowMenu(true);
-  };
-
   return (
     <NavWrap>
       <li>Home</li>
       <li>About</li>
       <li>Contact</li>
       <div>
-        <li onClick={() => showDropdown()}>Categories ▼</li>
+        <li onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
+          Categories ▼
+        </li>
         {showMenu && (
-          <Dropdown>
+          <Dropdown onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
             <li>Corporate</li>
             <li>Promo</li>
             <li>Weddings</li>
