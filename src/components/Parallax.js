@@ -9,6 +9,10 @@ const Wrap = styled.div`
       background: rgba(255, 255, 255, 0.8);
       font-size: 1.3em;
       padding: 30px;
+
+      h1 {
+        text-align: center;
+      }
     }
   }
 
