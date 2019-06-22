@@ -6,4 +6,5 @@ html {
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
+  scroll-behavior: smooth;
 }

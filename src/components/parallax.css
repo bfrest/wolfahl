@@ -97,6 +97,13 @@ iframe {
   /* ! This should maybe fade in when it gets close to the middle of the screen or right after it gets to the viewport */
 }
 
+.firstImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+}
+
 form {
   background: #fff;
   height: 50vh;
@@ -105,9 +112,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
   margin-top: 90px;
-  opacity: 0.9;
 }
 
 .bottom {
@@ -119,12 +124,13 @@ form {
 input {
   height: 5%;
   margin: 10px;
-  width: 40%;
+  width: 70%;
   opacity: 1;
+  text-align: center;
 }
 
 textarea {
-  width: 40%;
+  width: 70%;
   height: 150px;
 }
 
@@ -151,5 +157,9 @@ textarea {
   .pimg2,
   .pimg3 {
     background-attachment: scroll;
+  }
+
+  form {
+    width: 80vw;
   }
 }

@@ -2,10 +2,75 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "./parallax.css";
 
-const Wrap = styled.div``;
+const Wrap = styled.div`
+  #about {
+    div {
+      width: 40vw;
+      background: rgba(255, 255, 255, 0.8);
+      font-size: 1.3em;
+      padding: 30px;
+    }
+  }
+
+  @media (max-width: 568px) {
+    #about {
+      div {
+        width: 80vw;
+        font-size: 0.9em;
+      }
+    }
+  }
+`;
+
+const Dropdown = styled.div`
+  z-index: 999999;
+  background-color: #222;
+  color: #fff;
+`;
+
+const NavWrap = styled.div`
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: #222;
+  color: #fff;
+  height: 70px;
+  z-index: 2;
+
+  li {
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 15px 15px;
+    cursor: pointer;
+  }
+
+  li:hover {
+    color: #888;
+  }
+
+  div {
+    z-index: 1;
+  }
+
+  @media (max-width: 568px) {
+    height: 60px;
+    li {
+      font-size: 0.8em;
+    }
+  }
+`;
 
 const Parallax = () => {
   const [showMe, setShowMe] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const mobileMenu = () => {
+    showMenu ? setShowMenu(false) : setShowMenu(true);
+  };
 
   const toggleShow = () => {
     // TODO: make this add or remove a class on whatever element was clicked
@@ -13,9 +78,39 @@ const Parallax = () => {
     showMe === false ? setShowMe(true) : setShowMe(false);
   };
 
+  const scrollTo = elementId => {
+    document.querySelector(`#${elementId}`).scrollIntoView();
+  };
+
   return (
     <Wrap>
-      <div className="pimg1" />
+      <NavWrap>
+        <li onClick={() => scrollTo("about")}>About</li>
+        <li onClick={() => scrollTo("contact")}>Contact</li>
+        <div>
+          <li onClick={() => mobileMenu()} onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
+            Categories ▼
+          </li>
+          {showMenu && (
+            <Dropdown onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
+              <li>Corporate</li>
+              <li>Promo</li>
+              <li>Weddings</li>
+            </Dropdown>
+          )}
+        </div>
+      </NavWrap>
+      <div className="pimg1 firstImg" id="about">
+        <div>
+          <h1>WOLFAHL</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
 
       {/* 
       <section className="section section-dark">
@@ -65,11 +160,11 @@ const Parallax = () => {
       </section> */}
 
       <div className="pimg1 bottom">
-        <form>
+        <form id="contact">
           <h1>Let's Connect</h1>
           <input placeholder="Email" type="text" />
           <input placeholder="Name" type="text" />
-          <textarea placeholder="Description" />
+          <textarea />
         </form>
       </div>
     </Wrap>
