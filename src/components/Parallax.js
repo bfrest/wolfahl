@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import "./parallax.css";
+import { Link } from "@reach/router";
 
 const Wrap = styled.div`
   #about {
@@ -26,55 +27,8 @@ const Wrap = styled.div`
   }
 `;
 
-const Dropdown = styled.div`
-  z-index: 999999;
-  background-color: #222;
-  color: #fff;
-`;
-
-const NavWrap = styled.div`
-  position: sticky;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  background-color: #222;
-  color: #fff;
-  height: 70px;
-  z-index: 2;
-
-  li {
-    list-style: none;
-    font-size: 1.2em;
-    font-weight: 600;
-    padding: 15px 15px;
-    cursor: pointer;
-  }
-
-  li:hover {
-    color: #888;
-  }
-
-  div {
-    z-index: 1;
-  }
-
-  @media (max-width: 568px) {
-    height: 60px;
-    li {
-      font-size: 0.8em;
-    }
-  }
-`;
-
 const Parallax = () => {
   const [showMe, setShowMe] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
-
-  const mobileMenu = () => {
-    showMenu ? setShowMenu(false) : setShowMenu(true);
-  };
 
   const toggleShow = () => {
     // TODO: make this add or remove a class on whatever element was clicked
@@ -82,28 +36,12 @@ const Parallax = () => {
     showMe === false ? setShowMe(true) : setShowMe(false);
   };
 
-  const scrollTo = elementId => {
-    document.querySelector(`#${elementId}`).scrollIntoView();
-  };
+  // const scrollTo = elementId => {
+  //   document.querySelector(`#${elementId}`).scrollIntoView();
+  // };
 
   return (
     <Wrap>
-      <NavWrap>
-        <li onClick={() => scrollTo("about")}>About</li>
-        <li onClick={() => scrollTo("contact")}>Contact</li>
-        <div>
-          <li onClick={() => mobileMenu()} onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
-            Categories ▼
-          </li>
-          {showMenu && (
-            <Dropdown onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
-              <li>Corporate</li>
-              <li>Promo</li>
-              <li>Weddings</li>
-            </Dropdown>
-          )}
-        </div>
-      </NavWrap>
       <div className="pimg1 firstImg" id="about">
         <div>
           <h1>WOLFAHL</h1>

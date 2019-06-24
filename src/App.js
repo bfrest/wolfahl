@@ -4,50 +4,15 @@ import "./App.css";
 // import FirstBlock from "./components/FirstBlock";
 import Parallax from "./components/Parallax";
 import styled from "styled-components";
-
-const Dropdown = styled.div`
-  z-index: 999999;
-  background-color: #222;
-  color: #fff;
-`;
-
-const NavWrap = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  background-color: #222;
-  color: #fff;
-  height: 90px;
-
-  li {
-    list-style: none;
-    font-size: 1.2em;
-    font-weight: 600;
-    padding: 15px 15px;
-    cursor: pointer;
-  }
-
-  li:hover {
-    color: #888;
-  }
-
-  div {
-    z-index: 1;
-  }
-
-  @media (max-width: 568px) {
-    li {
-      font-size: 0.8em;
-    }
-  }
-`;
+import { Router } from "@reach/router";
+import Weddings from "./components/Weddings";
+import Nav from "./components/Nav";
+import Corporate from "./components/Corporate";
+import Promo from "./components/Promo";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
 
-  const mobileMenu = () => {
-    showMenu ? setShowMenu(false) : setShowMenu(true);
-  };
   return (
     <div className="App">
       {/* <NavWrap>
@@ -66,7 +31,13 @@ function App() {
           )}
         </div>
       </NavWrap> */}
-      <Parallax />
+      <Nav />
+      <Router>
+        <Parallax path="/" />
+        <Weddings path="/weddings" />
+        <Corporate path="/corporate" />
+        <Promo path="/promo" />
+      </Router>
     </div>
   );
 }
