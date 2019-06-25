@@ -26,19 +26,19 @@ const Weddings = () => {
         <button>Back</button>
       </Link>
       <WeddingWrap>
-        <iframe src="https://res.cloudinary.com/bfrest/image/upload/v1560109043/wolfahl/Screen_Shot_2019-06-09_at_1.35.41_PM.png" />
+        <iframe src="https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500" />
         <h3>Name Of Couple</h3>
       </WeddingWrap>
       <WeddingWrap>
-        <iframe src="https://res.cloudinary.com/bfrest/image/upload/v1560109043/wolfahl/Screen_Shot_2019-06-09_at_1.35.41_PM.png" />
+        <iframe src="https://images.pexels.com/photos/1464816/pexels-photo-1464816.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500" />
         <h3>Name Of Couple</h3>
       </WeddingWrap>{" "}
       <WeddingWrap>
-        <iframe src="https://res.cloudinary.com/bfrest/image/upload/v1560109043/wolfahl/Screen_Shot_2019-06-09_at_1.35.41_PM.png" />
+        <iframe src="https://images.pexels.com/photos/1128783/pexels-photo-1128783.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
         <h3>Name Of Couple</h3>
       </WeddingWrap>{" "}
       <WeddingWrap>
-        <iframe src="https://res.cloudinary.com/bfrest/image/upload/v1560109043/wolfahl/Screen_Shot_2019-06-09_at_1.35.41_PM.png" />
+        <iframe src="https://images.pexels.com/photos/1779491/pexels-photo-1779491.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
         <h3>Name Of Couple</h3>
       </WeddingWrap>
     </div>
