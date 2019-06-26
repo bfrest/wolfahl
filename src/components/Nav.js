@@ -6,6 +6,11 @@ const Dropdown = styled.div`
   z-index: 999999;
   background-color: #222;
   color: #fff;
+
+  li {
+    text-decoration: none;
+    color: #fff;
+  }
 `;
 
 const NavWrap = styled.div`
@@ -64,14 +69,14 @@ const Nav = () => {
         </li>
         {showMenu && (
           <Dropdown onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
+            <Link to="/weddings">
+              <li>Weddings</li>
+            </Link>
             <Link to="/corporate">
               <li>Corporate</li>
             </Link>
             <Link to="/promo">
               <li>Promo</li>
-            </Link>
-            <Link to="/weddings">
-              <li>Weddings</li>
             </Link>
           </Dropdown>
         )}

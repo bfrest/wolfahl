@@ -8,9 +8,9 @@ const WeddingWrap = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  margin: 20px 0;
+  margin: 50px 0;
 
-  iframe {
+  img {
     width: 800px;
     height: 500px;
     padding: 0;
@@ -26,19 +26,19 @@ const Weddings = () => {
         <button>Back</button>
       </Link>
       <WeddingWrap>
-        <iframe src="https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500" />
+        <img alt="weddings" src="https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500" />
         <h3>Name Of Couple</h3>
       </WeddingWrap>
       <WeddingWrap>
-        <iframe src="https://images.pexels.com/photos/1464816/pexels-photo-1464816.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500" />
+        <img alt="weddings" src="https://images.pexels.com/photos/1464816/pexels-photo-1464816.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500" />
         <h3>Name Of Couple</h3>
       </WeddingWrap>{" "}
       <WeddingWrap>
-        <iframe src="https://images.pexels.com/photos/1128783/pexels-photo-1128783.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+        <img alt="weddings" src="https://images.pexels.com/photos/1128783/pexels-photo-1128783.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
         <h3>Name Of Couple</h3>
       </WeddingWrap>{" "}
       <WeddingWrap>
-        <iframe src="https://images.pexels.com/photos/1779491/pexels-photo-1779491.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+        <img alt="weddings" src="https://images.pexels.com/photos/1779491/pexels-photo-1779491.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
         <h3>Name Of Couple</h3>
       </WeddingWrap>
     </div>
