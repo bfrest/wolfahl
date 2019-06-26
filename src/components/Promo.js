@@ -16,6 +16,13 @@ const PromoWrap = styled.div`
     padding: 0;
     margin: 0;
   }
+
+  @media (max-width: 568px) {
+    img {
+      width: 80vw;
+      height: auto;
+    }
+  }
 `;
 const Promo = () => {
   return (
