@@ -11,7 +11,8 @@ const PromoWrap = styled.div`
   width: 100vw;
   margin: 50px 0;
 
-  img {
+  img,
+  video {
     width: 800px;
     height: 500px;
     padding: 0;
@@ -19,7 +20,8 @@ const PromoWrap = styled.div`
   }
 
   @media (max-width: 568px) {
-    img {
+    img,
+    video {
       width: 80vw;
       height: auto;
     }
@@ -30,8 +32,11 @@ const Promo = () => {
     <div>
       <Back />
       <PromoWrap>
-        <img src="https://images.pexels.com/photos/34639/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="promo" />
-        <h2>Awesome Promo</h2>
+        <video controls preload>
+          <source src="https://res.cloudinary.com/bfrest/video/upload/v1560092162/wolfahl/MVI_5821.mp4" />
+        </video>
+
+        <h2>Light Fest</h2>
       </PromoWrap>
       <PromoWrap>
         <img src="https://images.pexels.com/photos/938971/pexels-photo-938971.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />

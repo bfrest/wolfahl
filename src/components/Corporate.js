@@ -11,14 +11,16 @@ const CorpWrap = styled.div`
   width: 100vw;
   margin: 80px 0;
 
-  img {
+  img,
+  video {
     width: 800px;
     height: 500px;
     padding: 0;
     margin: 0;
   }
   @media (max-width: 568px) {
-    img {
+    img,
+    video {
       width: 80vw;
       height: auto;
     }
@@ -30,7 +32,9 @@ const Corporate = () => {
     <div>
       <Back />
       <CorpWrap>
-        <img src="https://images.pexels.com/photos/7070/space-desk-workspace-coworking.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+        <video controls preload>
+          <source src="https://res.cloudinary.com/bfrest/video/upload/v1559958732/wolfahl/Snow_sundance_official.mp4" />
+        </video>
         <h2>Company A</h2>
       </CorpWrap>
       <CorpWrap>

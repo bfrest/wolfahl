@@ -34,7 +34,7 @@ const Weddings = () => {
       {/* //TODO: make this so the nav goes away and only this button shows */}
       <Back />
       <WeddingWrap>
-        <video controls>
+        <video controls preload>
           <source src="https://res.cloudinary.com/bfrest/video/upload/v1561905055/wolfahl/Anna_Kade_4.mov" />
         </video>
         <h3>Name Of Couple</h3>
