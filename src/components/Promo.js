@@ -1,4 +1,5 @@
 import React from "react";
+import Back from "./Back";
 import { Link } from "@reach/router";
 import styled from "styled-components";
 
@@ -27,9 +28,7 @@ const PromoWrap = styled.div`
 const Promo = () => {
   return (
     <div>
-      <Link to="/">
-        <button>Back</button>
-      </Link>
+      <Back />
       <PromoWrap>
         <img src="https://images.pexels.com/photos/34639/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="promo" />
         <h2>Awesome Promo</h2>

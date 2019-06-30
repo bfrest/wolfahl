@@ -49,7 +49,7 @@ const NavWrap = styled.div`
   }
 `;
 
-const Nav = () => {
+const Nav = props => {
   const [showMenu, setShowMenu] = useState(false);
 
   const mobileMenu = () => {

@@ -4,7 +4,7 @@ import "./App.css";
 // import FirstBlock from "./components/FirstBlock";
 import Parallax from "./components/Parallax";
 import styled from "styled-components";
-import { Router } from "@reach/router";
+import { Router, Location } from "@reach/router";
 import Weddings from "./components/Weddings";
 import Nav from "./components/Nav";
 import Corporate from "./components/Corporate";
@@ -15,23 +15,13 @@ function App() {
 
   return (
     <div className="App">
-      {/* <NavWrap>
-        <a href="/about">About</a>
-        <li href="/contact">Contact</li>
-        <div>
-          <li onClick={() => mobileMenu()} onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
-            Categories ▼
-          </li>
-          {showMenu && (
-            <Dropdown onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
-              <li>Corporate</li>
-              <li>Promo</li>
-              <li>Weddings</li>
-            </Dropdown>
-          )}
-        </div>
-      </NavWrap> */}
-      <Nav />
+      <Location>
+        {({ location }) => {
+          if (location.pathname === "/") {
+            return <Nav />;
+          }
+        }}
+      </Location>
       <Router>
         <Parallax path="/" />
         <Weddings path="/weddings" />

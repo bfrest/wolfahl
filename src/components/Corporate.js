@@ -1,4 +1,5 @@
 import React from "react";
+import Back from "./Back";
 import styled from "styled-components";
 import { Link } from "@reach/router";
 
@@ -27,9 +28,7 @@ const CorpWrap = styled.div`
 const Corporate = () => {
   return (
     <div>
-      <Link to="/">
-        <button>Back</button>
-      </Link>
+      <Back />
       <CorpWrap>
         <img src="https://images.pexels.com/photos/7070/space-desk-workspace-coworking.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
         <h2>Company A</h2>

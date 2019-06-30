@@ -7,9 +7,15 @@ const Wrap = styled.div`
   #about {
     div {
       width: 40vw;
-      background: rgba(255, 255, 255, 0.8);
-      font-size: 1.3em;
-      padding: 30px;
+      /* background: rgba(255, 255, 255, 0.8); */
+      font-size: 1.4em;
+      padding: 20px;
+      border-radius: 20px;
+      color: #fff;
+      font-weight: 800;
+      /* position: fixed; */
+      letter-spacing: 1px;
+      line-height: 1.6em;
 
       h1 {
         text-align: center;
@@ -25,6 +31,11 @@ const Wrap = styled.div`
       }
     }
   }
+`;
+
+const Vid = styled.iframe`
+  height: 100%;
+  width: 400px;
 `;
 
 const Parallax = () => {
@@ -44,7 +55,7 @@ const Parallax = () => {
     <Wrap>
       <div className="pimg1 firstImg" id="about">
         <div>
-          <h1>WOLFAHL</h1>
+          <h1>W O L F A H L</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
@@ -60,48 +71,24 @@ const Parallax = () => {
       </section> */}
 
       <div className="pimg2">
-        <div className="ptext" onClick={() => toggleShow()}>
+        <div className="ptext">
           <span className="border trans">Light Fest</span>
         </div>
       </div>
 
       {showMe && (
         <div className="section section-dark">
-          <video>
-            <source src="https://res.cloudinary.com/bfrest/video/upload/v1560092162/wolfahl/MVI_5821.mp4" />
-          </video>
-
-          <video>
-            <source src="https://res.cloudinary.com/bfrest/video/upload/v1560092162/wolfahl/MVI_5821.mp4" />
-          </video>
-
-          <video>
-            <source src="https://res.cloudinary.com/bfrest/video/upload/v1560092162/wolfahl/MVI_5821.mp4" />
-          </video>
-
-          <video>
-            <source src="https://res.cloudinary.com/bfrest/video/upload/v1560092162/wolfahl/MVI_5821.mp4" />
-          </video>
+          <iframe src="https://drive.google.com/file/d/118OxK5qO8Os4umJecL7dK_C-pqjnLhVg/preview" width="640" height="480" />
         </div>
       )}
 
       <div className="pimg3">
-        <div className="ptext" onClick={() => toggleShow()}>
+        <div className="ptext">
           <span className="border trans">Cancun</span>
         </div>
       </div>
 
-      {/* <section className="section section-dark">
-        <img src="https://res.cloudinary.com/bfrest/image/upload/v1560109072/wolfahl/Screen_Shot_2019-06-09_at_1.36.16_PM.png" alt="cancun" />
-
-        <img src="https://res.cloudinary.com/bfrest/image/upload/v1560109056/wolfahl/Screen_Shot_2019-06-09_at_1.35.24_PM.png" alt="cancun" />
-
-        <img src="https://res.cloudinary.com/bfrest/image/upload/v1560109043/wolfahl/Screen_Shot_2019-06-09_at_1.35.41_PM.png" alt="cancun" />
-
-        <img src="https://res.cloudinary.com/bfrest/image/upload/v1560109072/wolfahl/Screen_Shot_2019-06-09_at_1.36.16_PM.png" alt="cancun" />
-      </section> */}
-
-      <div className="pimg1 bottom">
+      <div className="pimg4 bottom">
         <form id="contact">
           <h1>Let's Connect</h1>
           <input placeholder="Email" type="text" />
