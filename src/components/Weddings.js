@@ -37,7 +37,7 @@ const Weddings = () => {
         <video controls preload>
           <source src="https://res.cloudinary.com/bfrest/video/upload/v1561905055/wolfahl/Anna_Kade_4.mov" />
         </video>
-        <h3>Name Of Couple</h3>
+        <h3>Anna & Kade</h3>
       </WeddingWrap>
       <WeddingWrap>
         <img alt="weddings" src="https://images.pexels.com/photos/1464816/pexels-photo-1464816.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500" />

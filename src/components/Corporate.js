@@ -32,10 +32,9 @@ const Corporate = () => {
     <div>
       <Back />
       <CorpWrap>
-        <video controls preload>
-          <source src="https://res.cloudinary.com/bfrest/video/upload/v1559958732/wolfahl/Snow_sundance_official.mp4" />
-        </video>
-        <h2>Company A</h2>
+        <iframe src="https://player.vimeo.com/video/345228053" frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
+
+        <h2>Sportsman for Fish and Wildlife</h2>
       </CorpWrap>
       <CorpWrap>
         <img src="https://images.pexels.com/photos/533189/pexels-photo-533189.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500" />

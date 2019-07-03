@@ -6,16 +6,16 @@ import { Link } from "@reach/router";
 const Wrap = styled.div`
   #about {
     div {
-      width: 40vw;
-      /* background: rgba(255, 255, 255, 0.8); */
-      font-size: 1.4em;
+      width: 50vw;
+      background: rgba(255, 255, 255, 0.8);
+      font-size: 1.2em;
       padding: 20px;
-      border-radius: 20px;
-      color: #fff;
+      border-radius: 10px;
+      color: #222;
       font-weight: 800;
       /* position: fixed; */
       letter-spacing: 1px;
-      line-height: 1.6em;
+      line-height: 1.3em;
 
       h1 {
         text-align: center;
@@ -56,12 +56,17 @@ const Parallax = () => {
       <div className="pimg1 firstImg" id="about">
         <div>
           <h1>W O L F A H L</h1>
+          <br />
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            I’m Caileb! The most preppy, Chinese speaking, cowboy you’ll ever meet. I live in the stunning state of Utah. Currently located in Salt Lake City, with my beautiful
+            wife and our Yorkie Grizz. ( be careful he’ll bite your head off 😉)
           </p>
+          <p> What inspired me to become a videographer....... I love being able to record a person’s most memorable moments and letting them relive them through videography.</p>
+          <p>
+            When I’m not behind a camera, I’m usually in the mountains riding my horse or cruising down the streets on my motorcycle. I love being adventurous and am a huge
+            advocate of traveling!
+          </p>
+          <p>I love meeting new people and want to meet you! I would love to help capture your memories and help you relive them. Let’s create!</p>
         </div>
       </div>
 
@@ -72,7 +77,7 @@ const Parallax = () => {
 
       <div className="pimg2">
         <div className="ptext">
-          <span className="border trans">Light Fest</span>
+          <span className="border trans">Weddings</span>
         </div>
       </div>
 
@@ -84,7 +89,7 @@ const Parallax = () => {
 
       <div className="pimg3">
         <div className="ptext">
-          <span className="border trans">Cancun</span>
+          <span className="border trans">Promo</span>
         </div>
       </div>
 
