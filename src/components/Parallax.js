@@ -4,30 +4,37 @@ import "./parallax.css";
 import { Link } from "@reach/router";
 
 const Wrap = styled.div`
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   #about {
+    display: flex;
+    flex-direction: column;
     div {
       width: 50vw;
-      background: rgba(255, 255, 255, 0.8);
-      font-size: 1.2em;
+      /* background: rgba(255, 255, 255, 0.7); */
+      font-size: 1.7em;
       padding: 20px;
       border-radius: 10px;
-      color: #222;
-      font-weight: 800;
+      color: #fff;
+      font-weight: 900;
       /* position: fixed; */
       letter-spacing: 1px;
       line-height: 1.3em;
+      text-align: center;
 
       h1 {
         text-align: center;
       }
+    }
+    img {
+      height: 60px;
     }
   }
 
   @media (max-width: 568px) {
     #about {
       div {
-        width: 80vw;
-        font-size: 0.9em;
+        width: 90vw;
+        font-size: 1.3em;
       }
     }
   }
@@ -55,19 +62,13 @@ const Parallax = () => {
     <Wrap>
       <div className="pimg1 firstImg" id="about">
         <div>
-          <h1>W O L F A H L</h1>
-          <br />
-          <p>
-            I’m Caileb! The most preppy, Chinese speaking, cowboy you’ll ever meet. I live in the stunning state of Utah. Currently located in Salt Lake City, with my beautiful
-            wife and our Yorkie Grizz. ( be careful he’ll bite your head off 😉)
-          </p>
-          <p> What inspired me to become a videographer....... I love being able to record a person’s most memorable moments and letting them relive them through videography.</p>
-          <p>
-            When I’m not behind a camera, I’m usually in the mountains riding my horse or cruising down the streets on my motorcycle. I love being adventurous and am a huge
-            advocate of traveling!
-          </p>
-          <p>I love meeting new people and want to meet you! I would love to help capture your memories and help you relive them. Let’s create!</p>
+          <p>My name is Caileb & I'm owner of</p>
+          <h3>WOLFAHL CO.</h3>
+          <p>Here on my site you'll find what my life is all about</p>
         </div>
+        <a href="https://www.instagram.com/cailebwolfahl/">
+          <img src="https://image.flaticon.com/icons/svg/733/733558.svg" alt="instagram" />
+        </a>
       </div>
 
       {/* 
@@ -80,12 +81,6 @@ const Parallax = () => {
           <span className="border trans">Weddings</span>
         </div>
       </div>
-
-      {showMe && (
-        <div className="section section-dark">
-          <iframe src="https://drive.google.com/file/d/118OxK5qO8Os4umJecL7dK_C-pqjnLhVg/preview" width="640" height="480" />
-        </div>
-      )}
 
       <div className="pimg3">
         <div className="ptext">

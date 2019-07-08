@@ -61,22 +61,25 @@ const Nav = props => {
 
   return (
     <NavWrap>
-      <li onClick={() => scrollTo("about")}>About</li>
-      <li onClick={() => scrollTo("contact")}>Contact</li>
+      <li onClick={() => scrollTo("about")}>ABOUT</li>
+      <li onClick={() => scrollTo("contact")}>CONTACT</li>
       <div>
         <li onClick={() => mobileMenu()} onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
-          Categories ▼
+          MY WORK ▼
         </li>
         {showMenu && (
           <Dropdown onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)}>
             <Link to="/weddings">
-              <li>Weddings</li>
+              <li>WEDDINGS</li>
             </Link>
             <Link to="/corporate">
-              <li>Corporate</li>
+              <li>CORPORATE</li>
             </Link>
             <Link to="/promo">
-              <li>Promo</li>
+              <li>PROMO</li>
+            </Link>
+            <Link to="/promo">
+              <li>HOMECOMINGS</li>
             </Link>
           </Dropdown>
         )}
