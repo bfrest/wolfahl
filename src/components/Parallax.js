@@ -2,28 +2,22 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "./parallax.css";
 import { Link } from "@reach/router";
+import Nav from "./Nav";
 
 const Wrap = styled.div`
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   #about {
     display: flex;
     flex-direction: column;
     div {
-      width: 50vw;
-      /* background: rgba(255, 255, 255, 0.7); */
-      font-size: 1.7em;
+      font-size: 2em;
       padding: 20px;
       border-radius: 10px;
       color: #fff;
       font-weight: 900;
       /* position: fixed; */
-      letter-spacing: 1px;
-      line-height: 1.3em;
+      line-height: 1em;
       text-align: center;
-
-      h1 {
-        text-align: center;
-      }
+      letter-spacing: 1px;
     }
     img {
       height: 60px;
@@ -33,8 +27,16 @@ const Wrap = styled.div`
   @media (max-width: 568px) {
     #about {
       div {
-        width: 90vw;
+        width: 100%100rem;
         font-size: 1.3em;
+        margin-top: -470px;
+        color: #000;
+      }
+      img {
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: 15;
       }
     }
   }
@@ -60,15 +62,14 @@ const Parallax = () => {
 
   return (
     <Wrap>
+      <Nav />
       <div className="pimg1 firstImg" id="about">
         <div>
           <p>My name is Caileb & I'm owner of</p>
-          <h3>WOLFAHL CO.</h3>
+          <p>WOLFAHL CO.</p>
           <p>Here on my site you'll find what my life is all about</p>
         </div>
-        <a href="https://www.instagram.com/cailebwolfahl/">
-          <img src="https://image.flaticon.com/icons/svg/733/733558.svg" alt="instagram" />
-        </a>
+        <a href="https://www.instagram.com/cailebwolfahl/">{<img src="https://image.flaticon.com/icons/svg/733/733558.svg" alt="instagram" />}</a>
       </div>
 
       {/* 
@@ -88,7 +89,7 @@ const Parallax = () => {
         </div>
       </div>
 
-      <div className="pimg4 bottom">
+      <div className="pimg1 bottom">
         <form id="contact">
           <h1>Let's Connect</h1>
           <input placeholder="Email" type="text" />

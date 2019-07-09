@@ -31,7 +31,7 @@ const WeddingWrap = styled.div`
 const Weddings = () => {
   return (
     <div>
-      {/* //TODO: make this so the nav goes away and only this button shows */}
+      {/*  make this so the nav goes away and only this button shows */}
       <Back />
       <WeddingWrap>
         <video controls preload>
