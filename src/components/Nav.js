@@ -78,7 +78,7 @@ const Nav = props => {
             <Link to="/promo">
               <li>PROMO</li>
             </Link>
-            <Link to="/promo">
+            <Link to="/homecomings">
               <li>HOMECOMINGS</li>
             </Link>
           </Dropdown>
