@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 
 const Dropdown = styled.div`
   z-index: 999999;
-  background-color: #222;
+  background-color: #b9b9b9;
   color: #fff;
 
   li {
@@ -20,16 +20,26 @@ const NavWrap = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  background-color: #222;
+  background-color: #b9b9b9;
   color: #fff;
-  height: 70px;
+  height: 100px;
   z-index: 2;
+
+  img {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -30px;
+  }
 
   li {
     list-style: none;
     font-size: 1.2em;
     font-weight: 600;
     padding: 15px 15px;
+    margin-top: 15px;
     cursor: pointer;
   }
 
@@ -43,8 +53,15 @@ const NavWrap = styled.div`
 
   @media (max-width: 568px) {
     height: 60px;
+
+    img {
+      height: 60px;
+      width: 120px;
+    }
+
     li {
       font-size: 0.8em;
+      margin-top: 5px;
     }
   }
 `;
@@ -61,6 +78,7 @@ const Nav = props => {
 
   return (
     <NavWrap>
+      <img src="https://res.cloudinary.com/bfrest/image/upload/f_auto/v1565653479/wolfahl/asdf.psd" />
       <li onClick={() => scrollTo("about")}>ABOUT</li>
       <li onClick={() => scrollTo("contact")}>CONTACT</li>
       <div>

@@ -100,7 +100,7 @@ iframe {
 }
 
 .ptext .border.trans {
-  background-color: #222;
+  background-color: #b9b9b9;
   /* ! This should maybe fade in when it gets close to the middle of the screen or right after it gets to the viewport */
 }
 

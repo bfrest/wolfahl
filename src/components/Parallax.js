@@ -27,7 +27,7 @@ const Wrap = styled.div`
   @media (max-width: 568px) {
     #about {
       div {
-        width: 100%100rem;
+        width: 100%;
         font-size: 1.3em;
         margin-top: -470px;
         color: #000;
